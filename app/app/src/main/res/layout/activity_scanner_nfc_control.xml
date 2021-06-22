@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+   >
+    <ImageView
+        android:id="@+id/cpplogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/cpp_system"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+
+        />
+    <!--android:keepScreenOn="true"-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_rawRes="@raw/close_btn"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/closeNfc"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLACER LA CARTE SUR LA ZONE "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textInfoNfc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/nfc_tuto"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/nfcAnimation"
+        android:layout_marginLeft="15dp"/>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PARAMETRE NFC"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/boutton_rounded_fb"
+            android:textColor="@color/white"
+            android:id="@+id/enableNFC"
+            android:visibility="invisible"
+
+
+            android:drawablePadding="20dp"/>
+
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/balance"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/boutton_rounded"
+            android:textColor="@color/white"
+            android:id="@+id/getCredit"
+            />
+    </LinearLayout>-->
+
+</RelativeLayout>

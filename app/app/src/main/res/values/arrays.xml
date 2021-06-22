@@ -1,0 +1,40 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="encaissement_entries">
+        <item>10 encaissements</item>
+        <item>20 encaissements</item>
+        <item>30 encaissements</item>
+    </string-array>
+
+    <string-array name="encaissement_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="annulation_entries">
+        <item>2h après encaissement</item>
+        <item>3h après encaissement</item>
+        <item>4h après encaissement</item>
+    </string-array>
+
+    <string-array name="annulation_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="statut_entries">
+        <item>En activité</item>
+        <item>En pause</item>
+        <item>En incident</item>
+        <item>Fin de service</item>
+    </string-array>
+
+    <string-array name="statut_values">
+        <item>active</item>
+        <item>pause</item>
+        <item>incident</item>
+        <item>end_service</item>
+    </string-array>
+</resources>

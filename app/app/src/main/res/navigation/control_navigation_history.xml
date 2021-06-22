@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_history"
+    app:startDestination="@+id/navigation_twohours">
+
+    <fragment
+        android:id="@+id/navigation_twohours"
+        android:name="com.cppsystem.cppbus.ui.controlleur.ui.twohours.TwoHoursHistoryFragment"
+        tools:layout="@layout/fragment_twohours_history" />
+
+    <fragment
+        android:id="@+id/navigation_daily"
+        android:name="com.cppsystem.cppbus.ui.controlleur.ui.daily.DailyHistoryFragment"
+        tools:layout="@layout/fragment_daily_history" />
+
+    <fragment
+        android:id="@+id/navigation_weekly"
+        android:name="com.cppsystem.cppbus.ui.controlleur.ui.weekly.WeeklyHistoryFragment"
+        tools:layout="@layout/fragment_weekly_history" />
+
+    <fragment
+        android:id="@+id/navigation_other_history"
+        android:name="com.cppsystem.cppbus.ui.other.OtherFragment"
+        tools:layout="@layout/fragment_other" />
+</navigation>

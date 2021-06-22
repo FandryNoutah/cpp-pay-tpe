@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191896276226",
+    "project_id": "cpp-bus",
+    "storage_bucket": "cpp-bus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191896276226:android:d647bc1bc2ef5b0d25461b",
+        "android_client_info": {
+          "package_name": "com.cppsystem.cppbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191896276226-c8cp84um8vjrkeguic0jf14a35i10o7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcl0odByQFli3Cz7yUHvagtUvjNLj_dcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191896276226-c8cp84um8vjrkeguic0jf14a35i10o7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_caisse">
+
+    <fragment
+        android:id="@+id/navigation_caisse"
+        android:name="com.cppsystem.cppbus.ui.controlleur.fragment.CaisseControlleurFragment"
+        tools:layout="@layout/fragment_cpp_transport_caisse" />
+
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="com.cppsystem.cppbus.ui.scan.Scan1d2dFragment"
+        tools:layout="@layout/fragment_scanner" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.cppsystem.cppbus.ui.search.SearchFragment"
+        tools:layout="@layout/fragment_list_content" />
+
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.cppsystem.cppbus.ui.other.OtherFragment"
+        tools:layout="@layout/fragment_other" />
+</navigation>

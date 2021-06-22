@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/step_1_dest"
+        android:title="@string/step_1_itinerary" />
+
+    <item
+        android:id="@+id/step_2_dest"
+        android:title="@string/step_2_itinerary" />
+
+    <item
+        android:id="@+id/step_3_dest"
+        android:title="@string/step_3_itinerary" />
+
+
+
+</menu>

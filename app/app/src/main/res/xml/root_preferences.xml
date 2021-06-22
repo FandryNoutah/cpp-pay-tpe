@@ -1,0 +1,83 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Compte">
+        <Preference
+            app:title="Informations de compte"
+            app:summary="Cliquer pour afficher vos  informations (nom, prenom ...etc)"
+            app:key="changeAccountInfo" />
+
+
+        <Preference
+            app:title="Déconnexion"
+            app:summary="Cliquer ici pour vous déconneter ( ceci mettra le statut du vehicule en fin de service)"
+            app:key="logout" />
+
+      <!--  <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+-->
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Syncrhonisation">
+
+        <SwitchPreferenceCompat
+            app:key="syncData"
+            app:title="Synchroniser automatiquement"
+            app:summary="Synchroniser automatiquement les informations dès qu'une connexion intenet est disponible"
+            app:defaultValue="true"/>
+
+        <Preference
+            app:title="Synchroniser les données utilisateurs"
+            app:summary="Cliquer ici pour synchroniser les données utilisateurs depuis le serveur"
+            app:key="syncUser" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Encaissement">
+
+        <ListPreference
+            app:defaultValue="10"
+            app:entries="@array/encaissement_entries"
+            app:entryValues="@array/encaissement_values"
+            app:key="nbEncaissement"
+            app:title="Nombre d'encaissement"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="2"
+            app:entries="@array/annulation_entries"
+            app:entryValues="@array/annulation_values"
+            app:key="delayAnnulation"
+            app:title="Délais d'annulation"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Paramètre Bus">
+
+        <ListPreference
+            app:defaultValue="active"
+            app:entries="@array/statut_entries"
+            app:entryValues="@array/statut_values"
+            app:key="statusBus"
+            app:title="Etat actuel du Bus"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:title="Paramètre"
+            app:summary="Cliquer ici pour changer les paramètres (Coopérative, Ligne, Bus ... )"
+            app:key="updateCoope" />
+
+
+
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

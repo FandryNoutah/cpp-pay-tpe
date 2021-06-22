@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/skeletonLayout"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/cpp_mobile_bus"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCANNER APP"
+                android:layout_gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+
+                />
+
+            <EditText
+                android:id="@+id/usernameLoginEdtx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_edit_text"
+                android:drawableLeft="@drawable/baseline_person_outline_grey_400_18dp"
+                android:drawablePadding="15dp"
+                android:hint="Numéro d'identification"
+                android:minHeight="50dp"
+                android:paddingLeft="20dp"
+                android:maxLines="1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/passwordLoginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_edit_text"
+                android:drawableLeft="@drawable/baseline_lock_grey_400_18dp"
+                android:drawablePadding="15dp"
+                android:hint="Code à 4 chiffres"
+                android:inputType="numberPassword"
+                android:minHeight="50dp"
+                android:paddingLeft="20dp"
+                android:maxLines="1"
+                android:textColor="@color/grey_400"
+                android:textColorHint="@color/grey_400"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Switch
+                android:id="@+id/rememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rester connecté"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/SCBSwitch"
+                android:checked="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:minHeight="40dp"
+                android:text="CONNEXION"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:background="@drawable/boutton_rounded"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/code_forgot"
+                android:textColor="@color/cpp_red_variant"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal"
+                android:background="@null"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@color/cpp_red_variant"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/dividerHely"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_support"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal"
+                android:background="@null"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright_cpp_system"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

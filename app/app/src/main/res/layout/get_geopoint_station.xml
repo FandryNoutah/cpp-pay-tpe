@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2"
+    android:id="@+id/multipleScanLoading"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+     android:id="@+id/stationLin"
+      android:layout_marginTop="10dp"
+      >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/_4dp"
+        android:id="@+id/backFromCaisse">
+      <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:src="@drawable/ic_arrow_back"
+          android:layout_marginLeft="@dimen/_8dp"
+          android:layout_marginRight="@dimen/_8dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="RETOUR"
+          android:layout_gravity="center_horizontal"
+          android:textColor="@color/white"
+          android:background="@color/cpp_red"
+          android:padding="2dp"
+          />
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center"
+      android:weightSum="3"
+      android:layout_marginLeft="10dp"
+      android:visibility="visible"
+      android:layout_marginTop="10dp"
+      >
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_red_800_24dp"
+        android:layout_weight="0.5"
+        android:id="@+id/prevStationMulti"
+        android:visibility="invisible"
+        />
+    <TextSwitcher
+        android:id="@+id/stationTxtMulti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.5"
+        android:textColor="@color/black"
+        />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_keyboard_arrow_right_red_800_24dp"
+        android:layout_weight="0.5"
+        android:id="@+id/nextStationMulti"/>
+
+  </LinearLayout>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/btnMultipleLin"
+      android:layout_marginBottom="20dp"
+      android:layout_centerInParent="true"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pointerStationGPS1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:minHeight="40dp"
+          android:text="POINT 1"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:background="@drawable/boutton_rounded"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"/>
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pointerStationGPS2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:minHeight="40dp"
+          android:text="POINT 2"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:background="@drawable/boutton_rounded"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pointerStationGPS4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:minHeight="40dp"
+          android:text="POINT 4"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:background="@drawable/boutton_rounded"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"/>
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pointerStationGPS3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:minHeight="40dp"
+          android:text="POINT 3"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:background="@drawable/boutton_rounded"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pointerStationReal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:minHeight="40dp"
+          android:text="POINT REEL ARRET"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:background="@drawable/boutton_rounded"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"/>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pointerGPSFInal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:minHeight="40dp"
+          android:text="VALIDER"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:background="@drawable/boutton_rounded_fb"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+  </LinearLayout>
+</RelativeLayout>

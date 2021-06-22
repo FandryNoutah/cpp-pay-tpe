@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_rawRes="@raw/control"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coopeTxt"
+                    android:layout_gravity="start"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/connectedUserTxt"
+                    android:layout_gravity="start"
+                    android:text=""/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutImage"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/logoCoope"
+                    android:layout_gravity="center"
+                    />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageProgress"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/cooperativeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_hint="COOPERATIVE"
+            app:smsp_floatingLabelColor="@color/cpp_red"
+            app:smsp_hintColor="#0E0E0E"
+            app:smsp_itemColor="#0E0E0E"
+            app:smsp_itemListColor="#0E0E0E"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="@color/cpp_red"
+            app:smsp_isSearchable="true"
+            app:smsp_searchHeaderText="STATUT DE DEMARRAGE"
+            app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+            android:layout_marginTop="@dimen/_8dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/ligne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="LIGNE"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="false"
+                app:smsp_searchHeaderText="LIGNE"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/ligneVariance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="VARIANCE"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="false"
+                app:smsp_searchHeaderText="VARIANCE"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_hint="VEHICULE"
+            app:smsp_floatingLabelColor="@color/cpp_red"
+            app:smsp_hintColor="#0E0E0E"
+            app:smsp_itemColor="#0E0E0E"
+            app:smsp_itemListColor="#0E0E0E"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="@color/cpp_red"
+            app:smsp_isSearchable="true"
+            app:smsp_searchHeaderText="VEHICULE"
+            app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/departCaisse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="DEPART"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="true"
+                app:smsp_searchHeaderText="DEPART"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/arriveeCaisse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="ARRIVEE"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="true"
+                app:smsp_searchHeaderText="ARRIVEE"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+      <!--  <TextView
+                android:layout_gravity="center"
+                android:id="@+id/controlCountChoose"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/_4dp"
+                android:paddingRight="9dp"
+                android:text="1"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_marginLeft="@dimen/_8dp" />-->
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Validate_choice_coop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="CONTROLER"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:background="@color/cpp_red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/gotoOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="AUTRES"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

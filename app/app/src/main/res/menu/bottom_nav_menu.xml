@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_caisse"
+        android:icon="@drawable/baseline_shopping_cart_white_24dp"
+        android:title="@string/cpp_caisse" />
+
+    <item
+        android:id="@+id/navigation_twohours"
+        android:icon="@drawable/baseline_history_white_24dp"
+        android:title="@string/twohourw" />
+
+    <item
+        android:id="@+id/navigation_incident"
+        android:icon="@drawable/ic_error_outline"
+        android:title="@string/incident" />
+    <item
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/baseline_pan_tool_black_24dp"
+        android:title="Autres" />
+
+
+</menu>

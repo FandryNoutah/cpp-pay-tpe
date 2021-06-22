@@ -1,0 +1,31 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2015-present, Parse, LLC.
+4  ~ All rights reserved.
+5  ~
+6  ~ This source code is licensed under the BSD-style license found in the
+7  ~ LICENSE file in the root directory of this source tree. An additional grant
+8  ~ of patent rights can be found in the PATENTS file in the same directory.
+9-->
+10<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+11    package="com.parse"
+12    android:versionCode="1"
+13    android:versionName="1.0" >
+14
+15    <uses-sdk
+16        android:minSdkVersion="14"
+16-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml
+17        android:targetSdkVersion="29" />
+17-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:12:5-67
+19-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:12:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:13:5-79
+20-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:13:22-76
+21
+22    <application />
+22-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:15:5-20
+23
+24</manifest>

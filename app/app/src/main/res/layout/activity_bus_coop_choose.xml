@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coopeTxt"
+                    android:layout_gravity="start"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/connectedUserTxt"
+                    android:layout_gravity="start"
+                    android:text=""/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutImage"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/logoCoope"
+                    android:layout_gravity="center"
+                    />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageProgress"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/vehicleInfo"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/_4dp"
+                android:paddingRight="9dp"
+                android:text="BUS 73456TBA"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                />
+            <TextView
+                android:id="@+id/ligneInfo"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/_4dp"
+                android:paddingRight="9dp"
+                android:text="MIRINDRA - 163"
+                android:background="@color/away"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/tourCountChoose"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/_4dp"
+                android:paddingRight="9dp"
+                android:text="0"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/sensTournee"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/_4dp"
+                android:paddingRight="9dp"
+                android:text="EN ATTENTE"
+                android:background="@color/cpp_red"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone"
+            >
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/ligneVariance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="VARIANCE"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="false"
+                app:smsp_searchHeaderText="VARIANCE"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/startStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_hint="STATUT DE DEMARRAGE"
+            app:smsp_floatingLabelColor="@color/cpp_red"
+            app:smsp_hintColor="#0E0E0E"
+            app:smsp_itemColor="#0E0E0E"
+            app:smsp_itemListColor="#0E0E0E"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="@color/cpp_red"
+            app:smsp_isSearchable="false"
+            app:smsp_searchHeaderText="STATUT DE DEMARRAGE"
+            app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+            android:layout_marginTop="@dimen/_8dp"
+            android:visibility="gone"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone"
+            >
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/departCaisse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="DEPART"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="true"
+                app:smsp_searchHeaderText="DEPART"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/arriveeCaisse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="ARRIVEE"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="true"
+                app:smsp_searchHeaderText="ARRIVEE"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone"
+
+            >
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/departChauffeur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="CHAUFFEUR"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="false"
+                app:smsp_searchHeaderText="CHAUFFEUR"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                />
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/departReceveur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_hint="RECEVEUR"
+                app:smsp_floatingLabelColor="@color/cpp_red"
+                app:smsp_hintColor="#0E0E0E"
+                app:smsp_itemColor="#0E0E0E"
+                app:smsp_itemListColor="#0E0E0E"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/cpp_red"
+                app:smsp_isSearchable="false"
+                app:smsp_searchHeaderText="RECEVEUR"
+                app:smsp_searchHeaderBackgroundColor="@color/cpp_red"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:pulse_count="4"
+            app:pulse_duration="3000"
+            app:pulse_repeat="0"
+            app:pulse_color="@color/black"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="Linear"
+            android:layout_gravity="center">
+            <com.github.nikartm.button.FitButton
+                android:id="@+id/startTournee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                app:fb_backgroundColor="@color/black"
+                app:fb_icon="@drawable/baseline_directions_bus_white_24dp"
+                app:fb_iconMarginTop="5dp"
+                app:fb_iconWidth="30dp"
+                app:fb_iconHeight="30dp"
+                app:fb_iconColor="#66888888"
+                app:fb_borderColor="@color/dnd"
+                app:fb_borderWidth="12dp"
+                app:fb_divHeight="1dp"
+                app:fb_divColor="#FFF"
+                app:fb_divWidth="70dp"
+                app:fb_shape="circle"
+                app:fb_text="DEMARRER"
+                app:fb_textStyle="bold"
+                app:fb_textColor="#FFF"
+                app:fb_textPaddingStart="5dp"
+                app:fb_textPaddingTop="10dp"
+                app:fb_textPaddingBottom="5dp"
+                app:fb_textPaddingEnd="5dp"
+                android:layout_centerInParent="true"/>
+<!--        <com.github.nikartm.button.FitButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:fb_backgroundColor="@color/black"
+            app:fb_borderColor="@color/dnd"
+            app:fb_borderWidth="12dp"
+            app:fb_shape="circle"
+            app:fb_text="DEMARRER"
+            app:fb_textAllCaps="true"
+            app:fb_textColor="#FFF"
+            app:fb_textPaddingEnd="16dp"
+            app:fb_textPaddingStart="16dp"
+            app:fb_textStyle="bold"
+            app:fb_textSize="18sp"
+            android:layout_centerInParent="true"
+
+            />-->
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+          >
+
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="ALLER"
+                    android:id="@+id/allerButton"
+                    app:icon="@drawable/baseline_keyboard_arrow_right_red_800_24dp"
+                    android:layout_marginLeft="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:layout_weight="1"
+
+
+                    />
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="RETOUR"
+                    android:id="@+id/retourButton"
+                    app:icon="@drawable/baseline_keyboard_arrow_left_red_800_24dp"
+                    android:layout_marginLeft="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:layout_weight="1"
+                    />
+
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/endCurrentSens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:text="TERMINER"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:background="@color/cpp_red"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Validate_choice_coop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="DEMARRER"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:background="@color/cpp_red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+            <com.github.nikartm.button.FitButton
+                android:id="@+id/endService"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+
+                android:enabled="true"
+                android:gravity="center_vertical"
+                app:fb_cornerRadius="2dp"
+                app:fb_shape="rectangle"
+                app:fb_divColor="#fff"
+                app:fb_divWidth="1dp"
+                app:fb_divHeight="40dp"
+                app:fb_rippleColor="#FBE9E7"
+                app:fb_iconWidth="28dp"
+                app:fb_iconHeight="28dp"
+                app:fb_iconPosition="left"
+                app:fb_iconMarginStart="20dp"
+                app:fb_iconMarginEnd="16dp"
+                app:fb_icon="@drawable/ic_close"
+                app:fb_iconColor="#FFF"
+                app:fb_textPaddingStart="16dp"
+                app:fb_textColor="#FFF"
+                app:fb_textStyle="bold"
+                app:fb_textSize="20sp"
+                app:fb_text="FIN DE SERVICE"
+                app:fb_backgroundColor="@color/cpp_red"/>
+            <com.github.nikartm.button.FitButton
+                android:id="@+id/gotoOther"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                app:fb_cornerRadius="2dp"
+                app:fb_shape="rectangle"
+                app:fb_divColor="#fff"
+                app:fb_divWidth="1dp"
+                app:fb_divHeight="40dp"
+                app:fb_rippleColor="#FBE9E7"
+                app:fb_iconWidth="28dp"
+                app:fb_iconHeight="28dp"
+                app:fb_iconPosition="left"
+                app:fb_iconMarginStart="20dp"
+                app:fb_iconMarginEnd="16dp"
+                app:fb_icon="@drawable/baseline_pan_tool_black_24dp"
+                app:fb_iconColor="#FFF"
+                app:fb_textPaddingStart="16dp"
+                app:fb_textColor="#FFF"
+                app:fb_text="AUTRES"
+                app:fb_textStyle="bold"
+                app:fb_textSize="20sp"
+                app:fb_backgroundColor="@color/black"/>
+
+           <!-- <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/gotoOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="AUTRES"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/endService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="FIN DE SERVICE"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:background="@color/cpp_red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

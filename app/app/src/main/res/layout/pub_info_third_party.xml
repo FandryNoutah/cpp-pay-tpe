@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootSuggest"
+    android:background="@color/black"
+
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleNotifPub"
+        android:layout_gravity="center_horizontal"
+        android:text="MIRINDRA / 194"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="11sp">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:elevation="3dp"
+        android:padding="@dimen/card_view_margin"
+        card_view:cardCornerRadius="@dimen/card_radius"
+        android:layout_marginRight="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_below="@+id/titleNotifPub"
+
+       >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toastRoot"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/multipleScanRelativeLayoutImage"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginLeft="@dimen/_4dp">
+                    <ImageView
+                        android:id="@+id/multipleScanImage"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@mipmap/new_user"
+                        />
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/multipleScanProgress"
+                        android:visibility="visible"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/cpplogo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/cpp_system"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout"
+                    android:weightSum="3"
+                    android:layout_toRightOf="@+id/multipleScanRelativeLayoutImage"
+                    >
+                    <TextView
+                        android:id="@+id/multipleScanUserName"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="@dimen/_8dp"
+                        android:padding="@dimen/_8dp"
+                        android:text="CARTE INVALIDE"
+                        android:layout_weight="2.8"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/multipleScanRelativeLayoutImage"
+                    android:layout_below="@+id/layout"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/multipleScanPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:paddingBottom="5dp"
+                        android:background="@drawable/background_bottom_editext"
+                        android:text="Contatez le support CPP!"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/layout"
+                        android:layout_marginTop="@dimen/_8dp">
+                        <TextView
+                            android:id="@+id/multipleScanDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8dp"
+                            android:text="2 Dec 2021"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:layout_marginRight="@dimen/_8dp"
+                            />
+                        <TextView
+                            android:id="@+id/multipleScanStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8dp"
+                            android:layout_marginBottom="@dimen/_4dp"
+                            android:text="Ambohijatovo"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_marginRight="@dimen/_8dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notifMessage"
+        android:layout_gravity="center_horizontal"
+        android:text="CPP-SYSTEM MISAOTRA ANAO!"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_view">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notifMessage"
+    android:background="@color/white"
+        android:layout_marginRight="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_4dp"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadinLoginAnimation"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:lottie_rawRes="@raw/login_progress"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endNotifMessage"
+            android:layout_gravity="center_horizontal"
+            android:text="Bon voyage!"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

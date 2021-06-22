@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_stepper"
+    app:startDestination="@id/step_1_dest">
+
+    <fragment
+        android:id="@+id/step_1_dest"
+        android:name="com.cppsystem.cppbus.ui.choice.Step1ItineraryFragment"
+        android:label="@string/step_1_itinerary"
+        tools:layout="@layout/fragment_step1_itinerary" />
+
+    <fragment
+        android:id="@+id/step_2_dest"
+        android:name="com.cppsystem.cppbus.ui.choice.Step2ItineraryFragment"
+        android:label="@string/step_2_itinerary"
+        tools:layout="@layout/fragment_step2_itinerary" />
+
+    <fragment
+        android:id="@+id/step_3_dest"
+        android:name="com.cppsystem.cppbus.ui.choice.Step3ItineraryFragment"
+        android:label="@string/step_3_itinerary"
+        tools:layout="@layout/fragment_step3_itinerary" />
+
+
+</navigation>

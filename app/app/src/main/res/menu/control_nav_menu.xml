@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_caisse"
+        android:icon="@drawable/baseline_check_circle_black_24dp"
+        android:title="Control" />
+
+    <item
+        android:id="@+id/navigation_scan"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/cpp_scan2d" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/baseline_search_black_24dp"
+        android:title="@string/search_user" />
+    <item
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/baseline_pan_tool_black_24dp"
+        android:title="Autres" />
+
+
+</menu>
