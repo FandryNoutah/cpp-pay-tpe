@@ -14,18 +14,18 @@
 14
 15    <uses-sdk
 16        android:minSdkVersion="14"
-16-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml
+16-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml
 17        android:targetSdkVersion="29" />
-17-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml
+17-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml
 18
 19    <uses-permission android:name="android.permission.INTERNET" />
-19-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:12:5-67
-19-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:12:22-64
+19-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:12:5-67
+19-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:12:22-64
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:13:5-79
-20-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:13:22-76
+20-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:13:5-79
+20-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:13:22-76
 21
 22    <application />
-22-->C:\Users\andryrak\Documents\Projet\CppBus\cpp-app-bus-scanner\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:15:5-20
+22-->C:\Users\fandresra\AndroidStudioProjects\cpp-pay-tpe\Parse-SDK-Android\parse\src\main\AndroidManifest.xml:15:5-20
 23
 24</manifest>
