@@ -4,7 +4,7 @@
 
 #include "sha256.hpp"
 #include "sha256.cpp"
-#include "../../../../../../../../Sdk/ndk/16.1.4479499/sysroot/usr/include/string.h"
+//#include "../../../../../../../../Sdk/ndk/16.1.4479499/sysroot/usr/include/string.h"
 
 /* Copyright (c) 2020-present Klaxit SAS
 *

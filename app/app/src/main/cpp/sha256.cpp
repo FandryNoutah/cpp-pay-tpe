@@ -1,6 +1,6 @@
 #include <fstream>
 #include "sha256.hpp"
-#include "../../../../../../../../Sdk/ndk/16.1.4479499/sysroot/usr/include/string.h"
+#include "../../../../../../../AppData/Local/Android/Sdk/android-ndk-r21e/sysroot/usr/include/string.h"
 /*
  * Updated to C++, zedwood.com 2012
  * Based on Olivier Gay's version
