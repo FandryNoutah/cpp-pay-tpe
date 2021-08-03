@@ -72,6 +72,8 @@ import okhttp3.TlsVersion;
 
 import static android.util.Log.DEBUG;
 import static com.cppsystem.cppbus.util.CppConstant.getDateTimeIndian;
+import static com.orm.util.ContextUtil.getPackageName;
+import static com.parse.Parse.getApplicationContext;
 
 
 public class CppApp  extends SugarApp {
